@@ -8,7 +8,12 @@ let session = require("express-session");
 let fileUpload = require("express-fileupload");
 require("dotenv").config();
 
+// Connection to Mongodb
 const db = process.env.MONGO_URL;
+mongoose
+  .connect(db)
+  .then(() => console.log(`Connection to MongoDb is success!`))
+  .catch((error) => console.log(" \n Connection error!!! \n\n", error));
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -59,17 +64,8 @@ app.use(adminProducts);
 app.use(products);
 app.use(cart);
 
-// Connection to server and MongoDb
-async function start() {
-  try {
-    await mongoose.connect(db);
-    console.log(`Connection to MongoDb is success!`);
+// Connection to server 
     app.listen(PORT, () => {
       console.log(`Server is listening PORT ${PORT}...`);
     });
-  } catch (error) {
-    console.log(" \n Connection error!!! \n\n", error);
-  }
-}
-
-start();
+ 
