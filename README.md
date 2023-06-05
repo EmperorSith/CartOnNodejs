@@ -27,9 +27,7 @@ This app is done using MVC design pattern.
 
 ## Setup:
 First one should download the application from GitHub, then install a project in a chosen folder using a command "npm i". 
-Then it needs to be created an env-file, where you should put an environment variable called MONGO_URL with string value of
-the database connection to MongoDB. Finally, you should open in the browser this address: 'localhost:3000' and run in the terminal
-a comand "node app" or "npm run dev".
+Then it needs to be created an env-file on one level with app.js file, where you should put an environment variable called MONGO_URL with string value of the database connection to MongoDB. Finally, you should open in the browser this address: 'localhost:3000' and run in the terminal a comand "node app" or "npm run dev".
 
 ##[Cart on Cyclic](https://nervous-jay-clothes.cyclic.app/)
 
