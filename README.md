@@ -1,5 +1,13 @@
 # [CartOnNodejs](https://nervous-jay-clothes.cyclic.app/)
 
+###Description
+This is a web application where users can buy some products. Also, it has a minimal control manager system (CMS), 
+where admin user be able to get, create and delete products and categories. Users add goods to the cart. On cart-page
+users can check all added products, remove some of them and change the amount, crear cart and add a username, an email, a phone number, 
+and an address. The order would be saved in MongoDb after user's clicking the “submit-button”. As well it can be displayed 
+products by categories. It is created using Node.js&Express.js, MongoDb&Mongoose, ejs-templating, sessions and many other things.
+This app is done using MVC design pattern.
+
 ## Tools:
 - [Visual Studio Code](https://code.visualstudio.com)
 - [Postman](https://www.postman.com)
