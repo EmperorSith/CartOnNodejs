@@ -1,6 +1,6 @@
 # [CartOnNodejs](https://nervous-jay-clothes.cyclic.app/)
 
-###Description
+### Description
 This is a web application where users can buy some products. Also, it has a minimal control manager system (CMS), 
 where admin user be able to get, create and delete products and categories. Users add goods to the cart. On cart-page
 users can check all added products, remove some of them and change the amount, crear cart and add a username, an email, a phone number, 
